@@ -14,7 +14,7 @@ public class WelcomeServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try (PrintWriter pw = resp.getWriter()) {
-            pw.write("Hello, Hexlet!");
+            pw.println("Hello, Hexlet!");
         }
     }
 
